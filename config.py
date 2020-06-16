@@ -8,7 +8,7 @@ class RunConfig:
     cases_path = "./test_dir/"
 
     # 配置浏览器驱动类型(chrome/firefox/chrome-headless/firefox-headless)。
-    driver_type = "chrome-headless"
+    driver_type = "chrome-headless--no-sandbox"
 
     # 配置运行的 URL
     url = "https://www.baidu.com"
