@@ -27,7 +27,7 @@ def pytest_html_results_table_header(cells):
 
 # 设置用例描述表格
 def pytest_html_results_table_row(report, cells):
-    # cells.insert(2, html.td(report.description))
+    cells.insert(2, html.td(report.description))
     cells.pop()
 
 
