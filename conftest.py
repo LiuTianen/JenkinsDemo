@@ -97,7 +97,7 @@ def capture_screenshots(case_name):
     if new_report_dir is None:
         raise RuntimeError('没有初始化测试目录')
     image_dir = os.path.join(REPORT_DIR, new_report_dir, "image", file_name)
-    driver.save_screenshot(image_dir)
+    # driver.save_screenshot(image_dir)
 
 
 def new_report_time():
