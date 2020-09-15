@@ -27,8 +27,7 @@ class TestSearch:
         """
         page = BaiduPage(browser)
         page.get(base_url)
-        page.search_input = "pytest"
-        page.search_button.click()
+        page.search_succes('pytest')
         sleep(2)
         assert browser.title == "pytest_百度搜索"
 
@@ -50,10 +49,7 @@ class TestSearchSettings:
         """
         page = BaiduPage(browser)
         page.get(base_url)
-        page.settings.click()
-        page.search_setting.click()
-        sleep(2)
-        page.save_setting.click()
+        page.baidu_seeting()
         alert_text = page.get_alert_text
         page.accept_alert()
         assert alert_text == "已经记录下您的使用偏好"
